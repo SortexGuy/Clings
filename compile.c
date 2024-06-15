@@ -80,7 +80,7 @@ struct lists get_directory(char* path, int* count) {
         perror("getcwd() error");
     }
     if (strcmp(path, "") == 0) {
-        sprintf(command, "%s%s%s", "ls ", cwd, "/Problems/ > file.txt");
+        sprintf(command, "%s%s%s", "ls ", cwd, "/problems/ > file.txt");
         file_name = "file.txt";
     } else {
         choppy(path);
@@ -99,7 +99,7 @@ struct lists get_directory(char* path, int* count) {
     }
     printf("\n path %s, cwd: %s \n", path, cwd);
     if (strcmp(path, "") == 0) {
-        sprintf(path, "%s%s", cwd, "/Problems/");
+        sprintf(path, "%s%s", cwd, "/problems/");
     }
     printf("late path: %s \n", path);
     int j = 0;
@@ -111,7 +111,7 @@ struct lists get_directory(char* path, int* count) {
     *count = j;
     fclose(fp);
     return result;
-    // sprintf(path,"%s%s%d%s",cwd,"/Problems/",i,".c");
+    // sprintf(path,"%s%s%d%s",cwd,"/problems/",i,".c");
     // printf("%s\n", path);
 }
 int compile(char* paths) {
