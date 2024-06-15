@@ -1,2 +1,3 @@
-# C-lings
-A set of exercises for better understanding and implementation of C
+# Clings
+The rustlings for the C language.
+A set of exercises for better understanding and implementation of C.
